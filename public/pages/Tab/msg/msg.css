@@ -1,0 +1,48 @@
+.Tab__msg__header{
+	background-color: #0eadfe;
+	color: #FFFFFF;
+}
+.Tab__msg__header > *{
+	color: #FFFFFF;
+}
+.item{
+	display: flex;
+	align-items: center;
+	padding: 5px 5px;
+	background-color: #FFFFFF;
+}
+.item+.item{
+	border-top: 1px solid #dedede;
+}
+.item > .left{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	margin: 5px 10px;
+}
+.item > .center{
+	padding-top: 5px;
+}
+.item > .center{
+	line-height: 20px;
+}
+.item > .center > .name{
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 20px;
+}
+.item > .center > .info{
+	font-size: 0.8em;
+	color: #555555;
+}
+.item > .center > .des{
+	font-size: 0.7em;
+	font-weight: lighter;
+	color: #6D6D72;
+}
+.item > .right{
+	color: #6D6D72;
+	font-size: 0.7em;
+	margin-left: auto;
+	margin-right: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<link rel="stylesheet" type="text/css" href="../../../lib/mui/css/mui.min.css" />
+		<script src="../../../lib/mui/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/bruce/bruce.Validate.js" type="text/javascript" charset="utf-8"></script>
+		<!--lib.end-->
+		<!--this.start-->
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<!--this.end-->
+		<!--Tab__index.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/index/index.css" />
+		<include src="../../Tab/index/index.html"></include>
+		<script src="../../Tab/index/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__index.end-->
+		<!--Tab__cicle.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/pelease/pelease.css" />
+		<include src="../../Tab/pelease/pelease.html"></include>
+		<script src="../../Tab/pelease/pelease.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__cicle.end-->
+		<!--Tab__home.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/home/home.css" />
+		<include src="../../Tab/home/home.html"></include>
+		<script src="../../Tab/home/home.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__home.end-->
+		<!--Tab__msg.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/msg/msg.css" />
+		<include src="../../Tab/msg/msg.html"></include>
+		<script src="../../Tab/msg/msg.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__msg.end-->
+		<!--Tab__my.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/my/my.css" />
+		<include src="../../Tab/my/my.html"></include>
+		<script src="../../Tab/my/my.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__my.end-->
+		<!--Auction__pelease.start-->
+		<link rel="stylesheet" type="text/css" href="../../Auction/pelease/pelease.css" />
+		<include src="../../Auction/pelease/pelease.html"></include>
+		<script src="../../Auction/pelease/pelease.js" type="text/javascript" charset="utf-8"></script>
+		<!--Auction__pelease.end-->
+		<!--User__logon.start-->
+		<link rel="stylesheet" type="text/css" href="../../User/logon/logon.css" />
+		<include src="../../User/logon/logon.html"></include>
+		<script src="../../User/logon/logon.js" type="text/javascript" charset="utf-8"></script>
+		<!--User__logon.end-->
+		<!--Tab__search.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/search/search.css" />
+		<include src="../../Tab/search/search.html"></include>
+		<script src="../../Tab/search/search.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__search.end-->
+		<!--Tab__search.start-->
+		<link rel="stylesheet" type="text/css" href="../../User/reg/reg.css" />
+		<include src="../../User/reg/reg.html"></include>
+		<script src="../../User/reg/reg.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__search.end-->
+	</head>
+
+	<body>
+	</body>
+
+</html>

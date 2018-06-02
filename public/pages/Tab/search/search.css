@@ -1,0 +1,110 @@
+
+#app.Tab__search{
+	width: 100%;
+	height: 100%;
+}
+.Tab__search{
+	position: absolute;
+	height: 55px;
+	width: 100%;
+	padding-top: 10px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.Tab__search_top{
+	width: 100%;
+}
+.Tab__search_left{
+	float: left;
+	width: 10%;
+}
+.Tab__search_left img{
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-left: 9px;
+	margin-top: 4px;
+	
+}
+.Tab__search_Bar img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 18%;
+	top: 8px;
+	z-index: 1;
+}
+.Tab__search_Bar{
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.Tab__search_Bar>.Tab__search_search{
+	list-style: none;
+	width: 75%;
+	text-align: left;
+	border: 1px solid #e8e8e8;
+	border-radius: 10px;
+	background-color: #f4f5f6;
+	position: absolute;
+}
+.Tab__search_top>.Tab__search_submit{
+	float: right;
+	border: none;
+	list-style: none;
+	color: #000;
+	background-color: #fff;
+}
+.Tab__search_section{
+	top: 75px;
+	position: absolute;
+	width: 100%;
+}
+.Tab__search_history span{
+	margin-left: 20px;
+	line-height: 50px;
+	color: #999999;
+}
+.Tab__search_history>span::after{
+	content: '';
+	background-image: url(../../../img/icon/del.png);
+	background-size: cover;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 5%;
+	top:6px
+}
+.Tab__search_history img{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+
+}
+.Tab__search_history{
+	border-bottom: 1px solid #e8e8e8;
+	/*display: none;*/
+}
+.Tab__search_detail_text{
+	text-align: center;
+}
+.Tab__search_guess{
+	borde-bottom: 1px solid #e8e8e8;
+}
+
+.Tab__search_guess span{
+	margin-left: 20px;
+	line-height: 50px;
+	color: #999999;
+	
+}
+.Tab__search_guess img{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+

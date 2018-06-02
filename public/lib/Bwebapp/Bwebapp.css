@@ -1,0 +1,358 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+template {
+	display: none;
+}
+
+.Bwebapp-page {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+.Bwebapp-page.ani-slide {
+	transition: transform 0.5s ease-out;
+}
+
+.Bwebapp-page.ani-slide.hide {
+	transform: translate(100%);
+}
+
+.Bwebapp-page.ani-slide.show {
+	transform: translate(0%);
+}
+
+.Bwebapp-page.ani-fade {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.Bwebapp-page.ani-fade.hide {
+	opacity: 0;
+	transform: translate(100%);
+	transition: opacity 0.5s ease-out, transform 0.9s cubic-bezier(1, 0, 0, 0);
+}
+
+.Bwebapp-page.ani-fade.show {
+	opacity: 1;
+	transform: translate(0%);
+}
+
+.Bwebapp-page.ani-none {}
+
+.Bwebapp-page.ani-none.hide {
+	transform: translate(100%);
+}
+
+.Bwebapp-page.ani-none.show {
+	transform: translate(0%);
+}
+
+
+/*Loader.start*/
+
+.Bwebapp-loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+}
+
+.Bwebapp-loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	/* COLOR 1 */
+	border-top-color: #FFF;
+	-webkit-animation: spin 2s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: spin 2s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-moz-animation: spin 2s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: spin 2s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 2s linear infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+	z-index: 1001;
+}
+
+.Bwebapp-loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	/* COLOR 2 */
+	border-top-color: #FFF;
+	-webkit-animation: spin 3s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-moz-animation: spin 3s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: spin 3s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: spin 3s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 3s linear infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.Bwebapp-loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #FFF;
+	/* COLOR 3 */
+	-moz-animation: spin 1.5s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: spin 1.5s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: spin 1.5s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-webkit-animation: spin 1.5s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 1.5s linear infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		/* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(0deg);
+		/* IE 9 */
+		transform: rotate(0deg);
+		/* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		/* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(360deg);
+		/* IE 9 */
+		transform: rotate(360deg);
+		/* Firefox 16+, IE 10+, Opera */
+	}
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		/* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(0deg);
+		/* IE 9 */
+		transform: rotate(0deg);
+		/* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		/* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(360deg);
+		/* IE 9 */
+		transform: rotate(360deg);
+		/* Firefox 16+, IE 10+, Opera */
+	}
+}
+
+.Bwebapp-loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background: #1abc9c;
+	/* Old browsers */
+	z-index: 1000;
+	-webkit-transform: translateX(0);
+	/* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: translateX(0);
+	/* IE 9 */
+	transform: translateX(0);
+	/* Firefox 16+, IE 10+, Opera */
+}
+
+.Bwebapp-loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+.Bwebapp-loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+
+/* Loaded */
+
+.Bwebapp-loader-wrapper.loaded .loader-section.section-left {
+	-webkit-transform: translateX(-100%);
+	/* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: translateX(-100%);
+	/* IE 9 */
+	transform: translateX(-100%);
+	/* Firefox 16+, IE 10+, Opera */
+	-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.Bwebapp-loader-wrapper.loaded .loader-section.section-right {
+	-webkit-transform: translateX(100%);
+	/* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: translateX(100%);
+	/* IE 9 */
+	transform: translateX(100%);
+	/* Firefox 16+, IE 10+, Opera */
+	-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded .Bwebapp-loader {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.Bwebapp-loader-wrapper.loaded {
+	visibility: hidden;
+	/* Firefox 16+, IE 10+, Opera */
+	-webkit-transition: all 0.3s 1s ease-out;
+	transition: all 0.3s 1s ease-out;
+}
+
+
+/*Loader.end*/
+
+
+/*WebUI*/ 
+.Bwebapp-WebUI-Modal{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999999999999999999999;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.Bwebapp-WebUI-waiting_modal{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 9999999999999999999998;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.Bwebapp-WebUI-waiting {
+	position: fixed;
+	z-index: 9999999999999999999999;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	border-radius: 10px;
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	width: 80px;
+	text-align: center;
+}
+
+.Bwebapp-WebUI-waiting>span {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	margin: 10px 0px;
+	margin-bottom: 0px;
+	/*transform: scale(2,2);*/
+	/*-moz-transform:scale(2,2);*/
+	-webkit-transform: scale(1, 1);
+	background-color: white;
+}
+.Bwebapp-WebUI-waiting>.title{
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 0.8em;
+	color: white;
+}
+.Bwebapp-WebUI-waiting>span:nth-child(1) {
+	/* COLOR 3 */
+	-moz-animation: Bwebapp-WebUI-waiting-animation 1s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: Bwebapp-WebUI-waiting-animation 1s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: Bwebapp-WebUI-waiting-animation 1s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-webkit-animation: Bwebapp-WebUI-waiting-animation 1s linear infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: Bwebapp-WebUI-waiting-animation 1s linear infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+}
+.Bwebapp-WebUI-waiting>span:nth-child(2) {
+	/* COLOR 3 */
+	-moz-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.3s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.3s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.3s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-webkit-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.3s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: Bwebapp-WebUI-waiting-animation 1s linear 0.3s infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+}
+.Bwebapp-WebUI-waiting>span:nth-child(3) {
+	/* COLOR 3 */
+	-moz-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.7s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-o-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.7s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-ms-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.7s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	-webkit-animation: Bwebapp-WebUI-waiting-animation 1s linear 0.7s infinite;
+	/* Chrome, Opera 15+, Safari 5+ */
+	animation: Bwebapp-WebUI-waiting-animation 1s linear 0.7s infinite;
+	/* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@keyframes Bwebapp-WebUI-waiting-animation {
+	0% {
+		-webkit-transform: scale(1, 1);
+	}
+	25% {
+		-webkit-transform: scale(0.8, 0.8);
+	}
+	50% {
+		-webkit-transform: scale(0.6, 0.6);
+	}
+	75% {
+		-webkit-transform: scale(0.8, 0.8);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+	}
+}

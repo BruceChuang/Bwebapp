@@ -1,0 +1,146 @@
+.mui-backdrop{
+	background-color: transparent;
+}
+#User__logon__app {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.User__logon__header.mui-bar {
+	display: block;
+	background-color: #efeff4;
+}
+
+.User__logon__header.mui-bar>a {
+	color: #0eadfe;
+}
+.User__logon__header.mui-bar .mui-title{
+	left: 80px;
+	right: 80px;
+}
+.User__logon.logon-method{
+	line-height: 44px;
+}
+.User__logon.mui-content {
+	background-color: #FFFFFF;
+}
+
+.User__logon.form#password-logon {
+	display: block;
+	margin: 20px 40px;
+	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.User__logon.form#phone-logon {
+	display: block;
+	margin: 20px 20px;
+	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.User__logon.mui-input-group:before {
+	height: 0px;
+}
+
+.User__logon.mui-input-group:after {
+	height: 0px;
+}
+
+.User__logon.mui-input-group .mui-input-row:after {
+	height: 0px;
+}
+
+.User__logon.mui-input-row {
+	border-bottom: 1px solid #c8c7cc;
+	background-color: #FFFFFF;
+}
+
+.User__logon.mui-input-row label~input {
+	width: 35%;
+	float: left;
+}
+
+.User__logon.mui-input-row label~input:not(.sms) {
+	width: 65%;
+	float: left;
+}
+
+.User__logon.mui-input-row {
+	margin-top: 20px;
+}
+
+.User__logon#password-logon > .mui-input-row label {
+	text-align: left;
+	width: 30%;
+}
+
+.User__logon#phone-logon > .mui-input-row label {
+	text-align: left;
+	width: 30%;
+}
+
+.User__logon.mui-input-row button {
+	float: right;
+	width: 30%;
+	border: 0px;
+	height: 100%;
+}
+
+.User__logon.mui-button-row {
+	margin: 20px 0px;
+	margin-bottom: 0px;
+}
+
+button[type="submit"].User__logon {
+	width: 90%;
+	font-size: 1em;
+	line-height: 20px;
+	background-color: #0eadfe;
+	border: 0px;
+	box-shadow: 0px 0px 2px #0EADFE;
+	border-radius: 0px;
+	padding: 5px 50px;
+	padding-top: 8px;
+	outline: none;
+}
+
+.mui-btn-blue.mui-active:enabled,
+.mui-btn-blue:enabled:active,
+.mui-btn-primary.mui-active:enabled,
+.mui-btn-primary:enabled:active,
+input[type=submit].mui-active:enabled,
+input[type=submit]:enabled:active {
+	border: 0px;
+	background-color: #1494d6;
+	!important
+}
+
+.User__logon.forget-password {
+	text-align: right;
+}
+
+.User__logon.forget-password>button {
+	border: 0px;
+	outline: none;
+	padding: 5px 20px;
+	margin: 0px;
+}
+.User__logon.forget-password>button:active{
+	background-color: rgba(0,0,0,0);
+	color: #333333;
+}
+.User__logon.reg{
+	display: block;
+	width: 100%;
+}
+.User__logon.reg-button, .reg-button:enabled:active, .User__logon.reg-button:enabled:focus{
+	padding: 5px 30px;
+	padding-top: 7px;
+	border: 1px solid #0eadfe !important;
+	background-color: rgba(0,0,0,0) !important;
+	color: #0eadfe;
+	margin: 30px auto;
+	display: block;
+}

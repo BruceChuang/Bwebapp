@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<!--lib.end-->
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--page.start-->
+		<link rel="stylesheet" type="text/css" href="my.css" />
+		<template id="Tab__my">
+			<div id="Tab__my__app" class="mui-content">
+				<!--header.start-->
+				<nav v-if="user != null && user != -1" class="header header-1">
+					<img class="header-avatar" :src="user.avatar_url" />
+					<div class="header-content">
+						<p>{{user.nickname}}</p>
+						<p>{{user.phone}}</p>
+					</div>
+					<div @click="goAllData()" class="header-title">
+						更多资料
+					</div>
+				</nav>
+				<!--header.end-->
+				<nav v-if="user != null && user != -1" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我发布的</span>
+					<span>{{user.publication_count}}</span>
+				</nav>
+				<nav v-if="user != null && user != -1" class="logout">
+					<span v-on:click="logout">退出登录</span>
+				</nav>
+				<!--unlogin.start-->
+				<nav v-if="user == null" class="header unlogin">
+					<div class="unlogin-logo">
+						<img src="../../../img/logo/logo-white_shadow.png" />
+					</div>
+					<div class="unlogin-hellow">
+						欢迎来到{{app_name}}
+					</div>
+					<div class="unlogin-button">
+						<button v-on:click="goLogon" data-href="../../User/logon/logon.html" type="button" class="mui-btn">马上登陆</button>
+					</div>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我的发布</span>
+					<span></span>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我的收藏</span>
+					<span></span>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>更多</span>
+					<span></span>
+				</nav>
+				<!--unlogin.end-->
+			</div>
+		</template>
+		<script src="my.js" type="text/javascript" charset="utf-8"></script>
+		<!--page.end-->
+	</head>
+
+	<body>
+	</body>
+
+	<foot>
+	</foot>
+
+</html>

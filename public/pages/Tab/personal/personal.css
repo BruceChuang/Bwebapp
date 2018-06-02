@@ -1,0 +1,118 @@
+
+#app{
+	width: 100%;
+	height: 100%;
+	background: #E8E8E8;
+}
+.Tab__personal_detail{
+	width: 100%;
+}
+.Tab__personal_pic{
+	padding: 10px;
+	float: left;
+	width: 100%;
+	background: #fff;
+	
+}
+.Tab__personal_pic img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+.Tab__personal_more{
+	float: right;
+	line-height: 50px;
+}
+.Tab__personal_more>span{
+	margin-right: 32 px;
+    position: absolute;
+    right: 42px;
+    top: 10px;
+}
+.Tab__personal_more>span::after{
+	content: '';
+	background-image: url(../../../img/icon/rigth.png);
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	position: absolute;
+	top: 6px;
+    left: 60px;
+}
+.Tab__personal_txt{
+	float: left;
+}
+.Tab__personal_txt>p{
+	margin-top: 10px;
+}
+.Tab__personal_list ul{
+	width: 100%;
+}
+.Tab__personal_list ul li{
+	width: 100%;
+	float: left;
+	list-style: none;
+	line-height:50px;
+	/*background: white;*/
+	margin-top: 1px;
+}
+.Tab__personal_list ul li a::after{
+	content: '';
+	position: absolute;
+	background: url(../../../img/icon/rigth.png);
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	margin-top: 12px;
+	right: 10px;
+}
+.Tab__personal_list ul li img{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 8px;
+	margin-right: 10px ;
+}
+
+.Tab__personal_list_txt{
+	line-height: 50px;
+}
+.Tab__personal_list_txt .img>span{
+	line-height: 45px;
+}
+.Tab__personal_list_txt img{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 10px  15px 10px 20px;
+}
+.Tab__personal_list_txt .img{
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+	margin-top: 10px;
+}
+.Tab__personal_list_btn{
+	text-align: center;
+}
+.Tab__personal_list_btn>button{
+	background: #ff4546;
+	text-align: center;
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	color: #FFF;
+	margin-top: 10px;
+}
+.Tab__personal_list_txt span::after{
+	color: #000;
+	content: '';
+	position: absolute;
+	background: url(../../../img/icon/rigth.png);
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	margin-top: 12px;
+	right: 18px;
+}

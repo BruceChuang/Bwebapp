@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<link rel="stylesheet" type="text/css" href="../../../lib/mui/css/mui.min.css"/>
+		<script src="../../../lib/mui/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<!--lib.end-->
+		<!--page.start-->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<template id="Tab__index">
+			<div id="app" class="mui-content">
+				<nav class="tabs">
+					<a href="Tab__home" v-on:click.stop.prevent="changeTab" class="tab true" data-name="home">
+						<span v-bind:class="{'icon-home-active' : isactive.home}" class="tab-icon icon-home"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.home}" class="tab-name">买卖</span>
+					</a>
+					<a href="Tab__pelease" v-on:click.stop.prevent="showPelease" class="tab false" data-name="pelease">
+						<span v-bind:class="{'icon-circle-active' : isactive.pelease}" class="tab-icon icon-circle"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.pelease}" class="tab-name">发布</span>
+					</a>
+					<a href="Tab__msg" v-on:click.stop.prevent="changeTab" class="tab true" data-name="msg">
+						<span v-bind:class="{'icon-msg-active' : isactive.msg}" class="tab-icon icon-msg"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.msg}" class="tab-name">消息</span>
+					</a>
+					<a href="Tab__my" v-on:click.stop.prevent="changeTab" class="tab true" data-name="my">
+						<span v-bind:class="{'icon-my-active' : isactive.my}" class="tab-icon icon-my"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.my}" class="tab-name">我的</span>
+					</a>
+				</nav>
+			</div>
+		</template>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+		<!--page.end-->
+	</head>
+
+	<body>
+	</body>
+
+</html>

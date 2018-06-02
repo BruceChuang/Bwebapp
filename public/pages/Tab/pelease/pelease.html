@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/mui/css/mui.min.css"/>
+		<!--lib.end-->
+		<!--page.start-->
+		<link rel="stylesheet" type="text/css" href="pelease.css" />
+		<template id="Tab__pelease">
+			<div id="Tab__pelease__app">
+				<div @click="clickBack" class="Tab__pelease__back">
+					
+				</div>
+				<div class="Tab__pelease__content_buttom">
+					<div class="Tab__pelease__menu">
+						<div @click="goAuctionPelease" class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-auction"></span>
+							<span class="Tab__pelease__button-text">拍卖</span>
+						</div>
+						<div class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-sell"></span>
+							<span class="Tab__pelease__button-text">出售</span>
+						</div>
+						<div class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-share"></span>
+							<span class="Tab__pelease__button-text">分享</span>
+						</div>
+					</div>
+					<div class="Tab__pelease__close">
+						<span @click="clickBack"></span>
+					</div>
+				</div>
+			</div>
+		</template>
+		<script src="pelease.js" type="text/javascript" charset="utf-8"></script>
+		<!--page.end-->
+	</head>
+
+	<body>
+		
+	</body>
+
+	<foot>
+	</foot>
+
+</html>

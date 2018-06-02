@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<link rel="stylesheet" type="text/css" href="../../../lib/mui/css/mui.min.css" />
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<!--lib.end-->
+		<!--Tab__home.start-->
+		<link rel="stylesheet" type="text/css" href="search.css" />
+		<template id="Tab__search">
+			<div id="app Tab__search">
+				<header class="Tab__search">
+					<div class="Tab__search_top">
+						<div @click="pageBack" class="Tab__search_left">
+							<img src="../../../img/icon/left.png" alt="" />
+						</div>
+						<input type="submit" value="搜索" class="Tab__search_submit"/>
+						
+						<div class="Tab__search_Bar">
+							<img src="../../../img/icon/search.png" alt="" />
+							<input type="search" value="" placeholder="搜你想搜的"/ class="Tab__search_search">
+						</div>
+					</div>
+				</header>
+				<section class="Tab__search_section">
+					<!--历史记录-->
+					<div class="Tab__search_history">
+						<span>历史记录</span>
+						<div class="Tab__search_detail_text">1212rrhe</div>
+					</div>
+				</section>
+			</div>
+		</template>
+		<script src="search.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	</body>
+	<foot> 
+	</foot>
+</html>

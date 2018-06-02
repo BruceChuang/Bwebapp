@@ -1,0 +1,136 @@
+
+#app{
+	width: 100%;
+	height: 100%;
+}
+.Tab__home{
+	position: absolute;
+	height: 55px;
+    background: #0eadfe;
+	width: 100%;
+	padding-top: 10px;
+}
+.Tab__home_top{
+	width: 100%;
+	height: 30px;
+}
+.Tab__home_font_dec{
+	line-height: 20px;
+	color: #222;
+}
+.Tab__home_my {
+	width: 15%;
+	float: left;
+}
+
+.Tab__home_my img{
+	width: 30px;
+	height: 30px;
+	color: white;
+}
+.Tab__home_search{
+	width: 80%;
+	height: 30px;
+	border-radius: 10px;
+	background: #FFFFFF;
+	float: left;
+	text-align: center;
+}
+.Tab__home_search span{
+	text-align: center;
+	line-height: 30px;
+	width: 100%;
+	margin: 0 auto;
+}
+.Tab__home_search ::after{
+	content:'';
+	background-image: url(../../../img/icon/search.png);
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-size: cover;
+	left: 20%;
+	top: 13px;
+}
+.Tab__home_search img{
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+	
+nav{
+	width: 100%;
+}
+.Tab__home_navbar{
+	padding: 0;
+	margin-top: 23px;
+	width: 100% ;
+	height: 20px;
+	text-align: center;
+}
+.Tab__home_navbar li a{
+	color: #000000;
+	
+}
+.Tab__home_navbar li{
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+	float: left;
+	width: 25%;
+	line-height: 20px;
+}
+.Tab__home_classify{
+	position: absolute;
+	top: 30px;
+	left: -90px;
+	/*display: none;*/
+	float: none;
+}
+.Tab__home_classify li{
+	text-align: center;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+
+.Tab__home_section{
+	width: 100%;
+	position: absolute;
+	top: 75px;
+	overflow-y: scroll; 	
+	float: left;
+	position: relative;
+	margin-top: 20px;
+}
+
+
+.Tab__home_img_container{
+	width: 100%;
+	height: 90px;
+	
+}
+.Tab__home_img_container img{
+	float: left;
+	width: 33.3%;
+	padding: 5px;
+	
+}
+.Tab__home_img img{
+	width: 100%;
+}
+.item_title_container{
+	border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+	margin: 0 10px;
+}
+.item_detetail{
+	float: left;
+	width: 48%;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+.detail_img{
+	float: left;
+}

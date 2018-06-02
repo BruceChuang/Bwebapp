@@ -1,0 +1,104 @@
+.mui-backdrop{
+	background-color: transparent;
+}
+body {
+	background-color: #FFFFFF;
+}
+
+.form {
+	margin: 100px 20px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.mui-input-group.User__reg:before {
+	height: 0px;
+}
+
+.mui-input-group.User__reg:after {
+	height: 0px;
+}
+
+.mui-input-group.User__reg .mui-input-row:after {
+	height: 0px;
+}
+
+.mui-input-row.User__reg,
+.mui-input-row.User__reg:last-child {
+	border: 1px solid #c8c7cc;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+}
+
+.mui-input-row.User__reg label~input {
+	width: 35%;
+	float: left;
+}
+
+.mui-input-row.User__reg label~input:not(.sms) {
+	width: 65%;
+	float: left;
+}
+
+.mui-input-row.User__reg {
+	margin-top: 10px;
+}
+
+.mui-input-row.User__reg label {
+	text-align: center;
+}
+
+.mui-input-row.User__reg button {
+	float: right;
+	width: 30%;
+	border: 0px;
+	height: 100%;
+}
+
+#send-sms.User__reg {
+	border-radius: 20px;
+}
+.submit-row.User__reg{
+	height: 80px;
+}
+button[type="submit"].User__reg {
+	margin: 20px;
+	font-size: 1.2em;
+	border-radius: 10px;
+	background-color: #0eadfe;
+	border: 0px;
+	box-shadow: 0px 0px 2px #0EADFE;
+	padding: 10px 20px;
+	outline: none;
+	color: #FFFFFF;
+}
+button[type="submit"].User__reg:active{
+	background-color: #1494d6; !important
+}
+
+.error.User__reg {
+	position: absolute;
+	right: 18px;
+	top: 5px;
+	color: #ef392b;
+	font-size: 12px;
+}
+.logo.User__reg{
+	margin: 20px;
+}
+.logo.User__reg>img {
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: #0eadfe;
+	display: block;
+	margin: 0px auto;
+}
+
+.error.User__reg {
+	position: initial;
+	color: #ef392b;
+	font-size: 17px;
+}
+.backClic.User__reg{
+	text-align: center;
+}

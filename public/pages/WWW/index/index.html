@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--lib.start-->
+		<link rel="stylesheet" type="text/css" href="../../../lib/mui/css/mui.min.css" />
+		<script src="../../../lib/mui/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../../lib/Bwebapp/Bwebapp.css" />
+		<script src="../../../lib/Bwebapp/Bwebapp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/bruce/bruce.Validate.js" type="text/javascript" charset="utf-8"></script>
+		<!--lib.end-->
+		<!--this.start-->
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<!--this.end-->
+		<!--Tab__index.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/index/index.css" />
+		<template id="Tab__index">
+			<div id="app" class="mui-content">
+				<nav class="tabs">
+					<a href="Tab__home" v-on:click.stop.prevent="changeTab" class="tab true" data-name="home">
+						<span v-bind:class="{'icon-home-active' : isactive.home}" class="tab-icon icon-home"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.home}" class="tab-name">买卖</span>
+					</a>
+					<a href="Tab__pelease" v-on:click.stop.prevent="showPelease" class="tab false" data-name="pelease">
+						<span v-bind:class="{'icon-circle-active' : isactive.pelease}" class="tab-icon icon-circle"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.pelease}" class="tab-name">发布</span>
+					</a>
+					<a href="Tab__msg" v-on:click.stop.prevent="changeTab" class="tab true" data-name="msg">
+						<span v-bind:class="{'icon-msg-active' : isactive.msg}" class="tab-icon icon-msg"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.msg}" class="tab-name">消息</span>
+					</a>
+					<a href="Tab__my" v-on:click.stop.prevent="changeTab" class="tab true" data-name="my">
+						<span v-bind:class="{'icon-my-active' : isactive.my}" class="tab-icon icon-my"></span>
+						<span v-bind:class="{'tab-name-active' : isactive.my}" class="tab-name">我的</span>
+					</a>
+				</nav>
+			</div>
+		</template>
+		<script src="../../Tab/index/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__index.end-->
+		<!--Tab__cicle.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/pelease/pelease.css" />
+		<template id="Tab__pelease">
+			<div id="Tab__pelease__app">
+				<div @click="clickBack" class="Tab__pelease__back">
+					
+				</div>
+				<div class="Tab__pelease__content_buttom">
+					<div class="Tab__pelease__menu">
+						<div @click="goAuctionPelease" class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-auction"></span>
+							<span class="Tab__pelease__button-text">拍卖</span>
+						</div>
+						<div class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-sell"></span>
+							<span class="Tab__pelease__button-text">出售</span>
+						</div>
+						<div class="Tab__pelease__button">
+							<span class="Tab__pelease__icon Tab__pelease__icon-share"></span>
+							<span class="Tab__pelease__button-text">分享</span>
+						</div>
+					</div>
+					<div class="Tab__pelease__close">
+						<span @click="clickBack"></span>
+					</div>
+				</div>
+			</div>
+		</template>
+		<script src="../../Tab/pelease/pelease.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__cicle.end-->
+		<!--Tab__home.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/home/home.css" />
+		<template id="Tab__home">
+			<div id="app">
+				<header class="Tab__home">
+					<div class="Tab__home_top">
+						<div class="Tab__home_my">
+							<img src="../../../img/icon/icon_my.png" alt="" />
+						</div>
+						<div @click="goSearch" class="Tab__home_search">
+							<span>世界的看法 | 上岛咖啡</span>
+						</div>
+					</div>
+					<nav>
+						<ul class="Tab__home_navbar">
+							<li><a href="">买卖</a></li>
+							<li><a href="">资讯</a></li>
+							<li><a href="">拍卖</a></li>
+							<li><a href="">分类</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<section class="Tab__home_section">
+					<div class="item_title_container">
+						<h5 class="Tab__home_font_dec">51岁田震近照：曾是歌坛大姐大，今满头白发！3个字评价那英!</h5>
+						<div class="Tab__home_img_container">
+							<img src="https://p3.pstatp.com/list/4ad7000411c62a4f52f7" alt="" />
+							<img src="https://p3.pstatp.com/list/4adb0001ef89ecbcdb7b" alt="" />
+							<img src="https://p3.pstatp.com/list/4ada0001f231f89d820f" alt="" />
+						</div>
+					</div>
+					
+					<div class="item_title_container">
+						<h5 class="Tab__home_font_dec">总价6X万买老城4地铁两房</h5>
+						<div class="Tab__home_img">
+							<img src="http://p3.pstatp.com/large/4a200000177157b2adc9"/>
+						</div>
+					</div>
+				</section>
+			</div>
+		</template>
+		<script src="../../Tab/home/home.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__home.end-->
+		<!--Tab__msg.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/msg/msg.css" />
+		<template id="Tab__msg">
+			<div id="app">
+				<header class="mui-bar mui-bar-nav Tab__msg__header">
+					<h1 class="mui-title">消息</h1>
+				</header>
+				<div class="mui-content">
+					<div class="items">
+						<div class="item">
+							<img class="left" src="https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=386362844,4138426699&fm=85&s=0709FB05DEA2229E9428DC8603002081" />
+							<div class="center">
+								<div class="name">
+									<span>江霞</span>
+								</div>
+								<div class="info">
+									<span>江夏村</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									有考虑吗，这个化妆品？
+								</div>
+							</div>
+							<div class="right">
+								<div>13:45</div>
+								<div>
+									<span class="">&nbsp;</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="http://www.feizl.com/upload2007/2014_01/140116182482507.jpg" />
+							<div class="center">
+								<div class="name">
+									<span>小晨晨</span>
+								</div>
+								<div class="info">
+									<span>黄石大家庭</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									世间两种罪恶,你笑是一种,你不笑是...
+								</div>
+							</div>
+							<div class="right">
+								<span>11月24日</span>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="http://img0.imgtn.bdimg.com/it/u=2777008330,1289798081&fm=214&gp=0.jpg" />
+							<div class="center">
+								<div class="name">
+									<span>魏然</span>
+								</div>
+								<div class="info">
+									<span>黄石大家庭</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									你好！
+								</div>
+							</div>
+							<div class="right">
+								<span>11月24日</span>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="http://b.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=2fd40670b8389b5038aae854b505c9e5/0df3d7ca7bcb0a46eb1a97576a63f6246b60afa7.jpg" />
+							<div class="center">
+								<div class="name">
+									<span>陈磊</span>
+								</div>
+								<div class="info">
+									<span>花都地税局</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									老铁，这野生黑枸杞还要吗？
+								</div>
+							</div>
+							<div class="right">
+								<span>11月24日</span>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="http://img1.skqkw.cn:888/2014/12/06/13/sfdxneyo3pi-114420.jpg" />
+							<div class="center">
+								<div class="name">
+									<span>林依依</span>
+								</div>
+								<div class="info">
+									<span>黄石大家庭</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									哈哈哈
+								</div>
+							</div>
+							<div class="right">
+								<span>11月22日</span>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4133906974,1234739575&fm=85&s=B286B54CC64651574F3C21090300C0D2" />
+							<div class="center">
+								<div class="name">
+									<span>晓纯</span>
+								</div>
+								<div class="info">
+									<span>广东培正皇家学院</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									同校吗？
+								</div>
+							</div>
+							<div class="right">
+								<span>11月19日</span>
+							</div>
+						</div>
+						<div class="item">
+							<img class="left" src="http://up.qqjia.com/z/24/tu29253_9.jpg" />
+							<div class="center">
+								<div class="name">
+									<span>宏杰</span>
+								</div>
+								<div class="info">
+									<span>广东培正皇家学院</span> | <span>广州</span>
+								</div>
+								<div class="des">
+									是啊
+								</div>
+							</div>
+							<div class="right">
+								<span>11月24日</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<script src="../../Tab/msg/msg.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__msg.end-->
+		<!--Tab__my.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/my/my.css" />
+		<template id="Tab__my">
+			<div id="Tab__my__app" class="mui-content">
+				<!--header.start-->
+				<nav v-if="user != null && user != -1" class="header header-1">
+					<img class="header-avatar" :src="user.avatar_url" />
+					<div class="header-content">
+						<p>{{user.nickname}}</p>
+						<p>{{user.phone}}</p>
+					</div>
+					<div @click="goAllData()" class="header-title">
+						更多资料
+					</div>
+				</nav>
+				<!--header.end-->
+				<nav v-if="user != null && user != -1" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我发布的</span>
+					<span>{{user.publication_count}}</span>
+				</nav>
+				<nav v-if="user != null && user != -1" class="logout">
+					<span v-on:click="logout">退出登录</span>
+				</nav>
+				<!--unlogin.start-->
+				<nav v-if="user == null" class="header unlogin">
+					<div class="unlogin-logo">
+						<img src="../../../img/logo/logo-white_shadow.png" />
+					</div>
+					<div class="unlogin-hellow">
+						欢迎来到{{app_name}}
+					</div>
+					<div class="unlogin-button">
+						<button v-on:click="goLogon" data-href="../../User/logon/logon.html" type="button" class="mui-btn">马上登陆</button>
+					</div>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我的发布</span>
+					<span></span>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>我的收藏</span>
+					<span></span>
+				</nav>
+				<nav v-if="user == null" class="nav-arrow">
+					<img src="../../../img/icon/circle-active.png" />
+					<span>更多</span>
+					<span></span>
+				</nav>
+				<!--unlogin.end-->
+			</div>
+		</template>
+		<script src="../../Tab/my/my.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__my.end-->
+		<!--Auction__pelease.start-->
+		<link rel="stylesheet" type="text/css" href="../../Auction/pelease/pelease.css" />
+		<template id="Auction__pelease">
+			<div id="Auction__pelease__app">
+			买卖发布页面
+				<button  @click="pageBack">返回键</button>
+				<button @click="showWaiting">显示等待框</button>
+			</div>
+		</template>
+		<script src="../../Auction/pelease/pelease.js" type="text/javascript" charset="utf-8"></script>
+		<!--Auction__pelease.end-->
+		<!--User__logon.start-->
+		<link rel="stylesheet" type="text/css" href="../../User/logon/logon.css" />
+		<template id="User__logon">
+		<div id="User__logon__app">
+			<header class="mui-bar mui-bar-nav User__logon__header">
+				<a @click="backClick" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<span class="mui-title">登录</span>
+				<a class="mui-pull-right logon-method User__logon" v-on:click="changeLogonMethod">{{logon_method ? '短信登录' : '密码登录'}}</a>
+			</header>
+			<div class="mui-content User__logon">
+				<!--密码登录.start-->
+				<form v-show="logon_method" id="password-logon" class="mui-input-group form User__logon">
+					<div class="mui-input-row User__logon">
+						<label>账号</label>
+						<input v-model="username" type="number" class="mui-input-clear User__logon" id="username" name="username" id="username" placeholder="请输入手机号" />
+					</div>
+					<div class="mui-input-row User__logon">
+						<label>密码</label>
+						<input v-model="password" type="password" class="mui-input-password" id="password" name="password" placeholder="请输入密码">
+					</div>
+					<div class="mui-button-row User__logon">
+						<button type="submit" class="mui-btn mui-btn-primary User__logon">登录</button>
+					</div>
+					<div class="forget-password User__logon">
+						<button type="button">忘记密码</button>
+					</div>
+				</form>
+				<!--密码登录.end-->
+				<!--手机登录.start-->
+				<form v-show="!logon_method" id="phone-logon" class="mui-input-group form User__logon">
+					<div class="mui-input-row User__logon">
+						<label>手机号</label>
+						<input v-model="phone" type="number" class="mui-input-clear User__logon" name="phone" id="phone" placeholder="输入你的手机号" />
+					</div>
+					<div class="mui-input-row User__logon">
+						<label>验证码</label>
+						<input v-model="sms" type="number" class="mui-input sms User__logon" name="sms" id="sms" placeholder="输入验证码" />
+						<button v-on:click="sendSms" id="send-sms" v-bind:disabled="(!sms_onvalid)" type="button">获取验证码</button>
+					</div>
+					<div class="mui-button-row User__logon">
+						<button type="submit" class="mui-btn mui-btn-primary User__logon">登录</button>
+					</div>
+					<div class="forget-password User__logon">
+						<button type="button">忘记密码</button>
+					</div>
+				</form>
+				<!--手机登录.end-->
+				<div class="reg User__logon">
+					<button v-on:click="showReg" data-href="../../User/reg/reg.html" class="reg-button User__logon" type="button">注册</button>
+				</div>
+			</div>
+		</div>
+		</template>
+		<script src="../../User/logon/logon.js" type="text/javascript" charset="utf-8"></script>
+		<!--User__logon.end-->
+		<!--Tab__search.start-->
+		<link rel="stylesheet" type="text/css" href="../../Tab/search/search.css" />
+		<template id="Tab__search">
+			<div id="app Tab__search">
+				<header class="Tab__search">
+					<div class="Tab__search_top">
+						<div @click="pageBack" class="Tab__search_left">
+							<img src="../../../img/icon/left.png" alt="" />
+						</div>
+						<input type="submit" value="搜索" class="Tab__search_submit"/>
+						
+						<div class="Tab__search_Bar">
+							<img src="../../../img/icon/search.png" alt="" />
+							<input type="search" value="" placeholder="搜你想搜的"/ class="Tab__search_search">
+						</div>
+					</div>
+				</header>
+				<section class="Tab__search_section">
+					<!--历史记录-->
+					<div class="Tab__search_history">
+						<span>历史记录</span>
+						<div class="Tab__search_detail_text">1212rrhe</div>
+					</div>
+				</section>
+			</div>
+		</template>
+		<script src="../../Tab/search/search.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__search.end-->
+		<!--Tab__search.start-->
+		<link rel="stylesheet" type="text/css" href="../../User/reg/reg.css" />
+		<template id="User__reg">
+			<form id="User__reg__form" class="mui-input-group form User__reg">
+				<div class="mui-row logo User__reg">
+					<img src="../../../img/logo/logo-white_shadow.png"/>
+				</div>
+				<div class="mui-input-row User__reg">
+					<label>手机号</label>
+					<input v-model="phone" type="number" class="mui-input-clear User__reg" name="phone" id="phone" placeholder="输入你的手机号" />
+				</div>
+				<div class="mui-input-row User__reg">
+					<label>验证码</label>
+					<input v-model="sms" type="number" class="mui-input sms User__reg" name="sms" id="sms" placeholder="输入验证码" />
+					<button v-on:click="sendSms" id="send-sms" v-bind:disabled="(!sms_onvalid)" type="button">获取验证码</button>
+				</div>
+			    <div class="mui-button-row submit-row User__reg">
+			        <button type="submit" class="submit User__reg" class="mui-btn mui-btn-primary" >开始注册</button>
+			    </div>
+				<div class="backClic User__reg">
+					<button @click="backClick" type="button">返回登录</button>
+				</div>
+			</form>
+		</template>
+		<script src="../../User/reg/reg.js" type="text/javascript" charset="utf-8"></script>
+		<!--Tab__search.end-->
+	</head>
+
+	<body>
+	</body>
+
+</html>

@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+.mui-active.mui-indicator {
+	background: #0eadfe !important;
+}
+.Tab__pelease__icon{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-top: 5px;
+	background-size: 100% 100%;
+}
+.Tab__pelease__icon-auction{
+	background-image: url(../../../img/icon/edit.png);
+}
+.Tab__pelease__icon-sell{
+	background-image: url(../../../img/icon/pic.png);
+}
+.Tab__pelease__icon-share{
+	background-image: url(../../../img/icon/ask.png);
+}
+
+#Tab__pelease__app {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.Tab__pelease__back{
+	height: 100%;
+}
+.Tab__pelease__content_buttom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: rgb(238, 238, 238);
+}
+.Tab__pelease__menu{
+	display: flex;
+	justify-content: center;
+}
+.Tab__pelease__menu > .Tab__pelease__button{
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+}
+.Tab__pelease__button-text{
+	font-size: 0.6em;
+}
+.Tab__pelease__close{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.Tab__pelease__close > span{
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); 	/* Opera */
+}
+
+
+.Tab__pelease__close > span::before {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	height: 1px;
+	width: 60%;
+	display: block;
+	content: '';
+	background-color: black;
+}
+
+.Tab__pelease__close > span::after {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 1px;
+	height: 60%;
+	display: block;
+	background-color: black;
+	content: '';
+}
